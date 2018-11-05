@@ -7,6 +7,7 @@ WORKDIR /usr/src/app
 # `npm install` will be cached on future builds if only the app code changed
 COPY package*.json ./
 RUN npm config set strict-ssl false
+RUN npm config set registry "http://registry.npmjs.org/"
 RUN npm install
 
 # copy the app
