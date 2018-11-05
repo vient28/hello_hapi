@@ -27,7 +27,6 @@ RUN echo "f1OPURaMtg4cMOgbQSbzzIyZvF7K4+YSiUfJSQHPAUpkFvNuOnrrof4yjeyIV53T">> sa
 RUN echo "3ggYvrJXAg0s2p52/1k=">> samsung.crt
 RUN echo "-----END CERTIFICATE-----">> samsung.crt
 RUN mv samsung.crt /usr/local/share/ca-certificates/ && update-ca-certificates
-RUN npm config set strict-ssl false
 RUN npm install
 
 # copy the app

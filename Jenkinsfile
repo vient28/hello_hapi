@@ -13,7 +13,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
- 		sh 'npm config set strict-ssl false'
                 sh 'npm install'
             }
         }
